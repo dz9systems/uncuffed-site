@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/css/uncuffed-site.webflow.d8370f930.css"
+    rel="stylesheet" type="text/css" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>Outside Team</h1>
+  <div class="w-dyn-items"></div>
+
+  <script>
+    const baseURL = 'https://uncuffed-api.onrender.com';
+    const outSideURL = `${baseURL}/podcast/outside-team`;
+    const insideTeamURL = `${baseURL}/podcast/inside-team`;
+    const parentContainer = document.querySelector('.w-dyn-items');
+    console.log(parentContainer);
+    // Add event listener to sort tags
+
+    const renderContent = (url) => {
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // Loop through the podcasts and create a div for each podcast
+          data?.forEach(item => {
+
+            const teamContainer = $(`
+            <div role="listitem" class="w-dyn-item">
+              <div data-w-id="0f65be73-d7f9-a0e4-8f38-44dce1e2bad9" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="about-component">
+                <div class="about-image-wrapper">
+                  <img src="${'https://uploads-ssl.webflow.com/65244ca70be6b863d4a3a46d/652cc6a3e4e95fb82fa07547_profile%20photo.png'}" alt="" class="about-image">
+                </div>
+                <div class="about-content">
+                  <h2 class="heading-style-h3">${item.fields['Name/Byline']}</h2>
+                  <div class="text-block-33">
+                    ${item.fields['Title / Role']}
+                  </div>
+                  <div class="text-color-grey">
+                    ${item.fields?.Bio}
+                  </div>
+                    <a href="#" class="link-10">More stories</a>
+                  </div>
+                </div>
+                    <div class="padding-bottom padding-large"></div>
+            </div>`)
+            // Append the div to the container
+            $('.w-dyn-items').append(teamContainer);
+          });
+        });
+    }
+    renderContent(outSideURL)
+  </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/css/uncuffed-site.webflow.8aef59259.min.css" rel="stylesheet" type="text/css">
+  <style>
+    /* CSS for the modal and overlay */
+    #modalOverlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0; /* Start with zero opacity */
+      transition: opacity 0.3s ease; /* Add a transition for opacity with a 0.3s duration */
+
+    }
+
+    #modalContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+    </style>
+</head>
+<body><div class="page-wrapper"><div class="walsh-nav-wrapper-green"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="walsh-main-nav w-nav"><div class="walsh-container-nav w-container"><div class="walsh-inner-nav"><a href="/" aria-current="page" class="walsh-brand-block w-nav-brand w--current" aria-label="home"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652454e14e1f8436f6875417_Uncuffed%20Logo%20for%20Social%20Media%20Circles.png" loading="lazy" alt="" class="walsh-nav-logo"><div class="text-block-25">UNCUFFED</div></a><nav role="navigation" class="walsh-nav-menu-green w-nav-menu"><a href="/listen" class="walsh-nav-link-white w-nav-link" style="max-width: 1480px;">Listen</a><div data-hover="false" data-delay="0" class="walsh-dropdown w-dropdown" style="max-width: 1480px;"><div class="walsh-toggle w-dropdown-toggle" id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0"><div class="walsh-icon-dropdown w-icon-dropdown-toggle" aria-hidden="true"></div><div class="text-block-26">About</div></div><nav class="walsh-dropdown-list w-dropdown-list" id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0"><a href="https://uncuffed-site.webflow.io/about#About-uncuffed" class="walsh-dropdown-link w-dropdown-link" tabindex="0">About Uncuffed</a><a href="https://uncuffed-site.webflow.io/about#Our-Work" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Our Work</a><a href="https://uncuffed-site.webflow.io/about#Our-Story" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Our Story</a><a href="https://uncuffed-site.webflow.io/about#press" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Press</a><a href="https://uncuffed-site.webflow.io/about#Awards" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Awards</a><a href="https://uncuffed-site.webflow.io/about#partner" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Partners</a></nav></div><div data-hover="false" data-delay="0" class="walsh-dropdown w-dropdown" style="max-width: 1480px;"><div class="walsh-toggle w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0"><div class="walsh-icon-dropdown w-icon-dropdown-toggle" aria-hidden="true"></div><div class="text-block-26">Team</div></div><nav class="walsh-dropdown-list w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1"><a href="/about" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Inside Team</a><a href="/outside-team" class="walsh-dropdown-link w-dropdown-link" tabindex="0">Outside Team</a></nav></div><a href="/contact" class="walsh-nav-link-white w-nav-link" style="max-width: 1480px;">Contact</a><a href="/faq" class="walsh-nav-link-white w-nav-link" style="max-width: 1480px;">FAQ</a><div class="walsh-flex-nav-buttons"><a href="/donate" class="walsh-link-block-orange w-inline-block"><div class="div-block-38"><div class="walsh-label-button">Donate</div><div class="walsh-arrow-wrapper"></div></div></a></div></nav><div class="walsh-menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><div class="nav-menu-wrapper"><div class="nav-menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><div class="menu-icon"><div class="menu-icon-line-top"></div><div class="menu-icon-line-middle"></div><div class="menu-icon-line-bottom"></div></div></div></div></div></div></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div></div></div><div class="main-wrapper"><section class="section-hero"><div class="hero-component"><div id="w-node-_8f4130b8-60a5-fd4e-e286-76ad4adaa2ab-d4a3a4e1" class="div-block-8"><div><div class="div-block-53"><div data-w-id="8f4130b8-60a5-fd4e-e286-76ad4adaa2b2" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-caption">A KALW Public Media Training Program</div><div data-w-id="abeae367-2bd0-3ad5-80b6-e784ee6f3879" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-waves-wrapper"><h1 class="heading">uncuffed</h1><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65245cb3f8d6d97c3872b3b2_633abdcac320515a9e37bf13_waves-deco.svg.png" loading="lazy" alt="" class="hero-waves"></div><div class="text-block-4">Voices from behind prison walls</div><div data-w-id="470800be-95e4-e622-4170-29f6761ec2ce" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="text-block-3">Subscribe and listen everywhere</div><div data-w-id="86944798-be6b-c375-7058-54622d6d4f08" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-links"><a href="#" class="hero-link w-inline-block"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a50e_s-spotify.svg" loading="lazy" alt=""></a><a href="#" class="hero-link w-inline-block"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a515_s-google.svg" loading="lazy" alt=""></a><a href="#" class="hero-link w-inline-block"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a514_s-apple.svg" loading="lazy" alt=""></a><a href="#" class="hero-link w-inline-block"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a50f_s-pocket.svg" loading="lazy" alt=""></a><a href="#" class="hero-link w-inline-block"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a50d_s-anchor.svg" loading="lazy" alt=""></a></div></div></div></div><div data-w-id="8f4130b8-60a5-fd4e-e286-76ad4adaa2b9" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-image-wrapper"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652482de03e48de76be207ea_uncuffed_hero_img.png" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 76vw, (max-width: 1279px) 74vw, (max-width: 1439px) 75vw, (max-width: 1919px) 80vw, 93vw" alt="" width="807" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652482de03e48de76be207ea_uncuffed_hero_img-p-500.png 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652482de03e48de76be207ea_uncuffed_hero_img-p-800.png 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652482de03e48de76be207ea_uncuffed_hero_img-p-1080.png 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652482de03e48de76be207ea_uncuffed_hero_img-p-1600.png 1600w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652482de03e48de76be207ea_uncuffed_hero_img.png 1614w" class="hero-image"></div></div></section><section class="start-here"><div class="padding-global"><div class="container-large"><div class="div-block-9"><div class="div-block-27"><div data-w-id="efd2eb02-38b9-27f1-9960-8ad3ef42a5cd" style="opacity: 0;" class="home-about-content"><h2 class="heading-style-h3">LISTEN</h2><div class="text-color-grey padding_right_small">True stories of humanity from behind the wall. The award-winning podcast created by people incarcerated in San Quentin and Solano Prisons.</div><div class="play-trailer-home"><div class="text-block-5">Play Trailer</div><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652f1017e31587801499a49b_play-button.jpg" loading="lazy" sizes="(max-width: 1279px) 55.99431610107422px, (max-width: 1439px) 4vw, (max-width: 1919px) 55.99431610107422px, 70px" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652f1017e31587801499a49b_play-button-p-500.jpg 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652f1017e31587801499a49b_play-button-p-800.jpg 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652f1017e31587801499a49b_play-button.jpg 1080w" alt="" class="image-2 play-button"><audio class="audio-player">
+    <source src="https://cpa.ds.npr.org/s2/audio/2022/11/unc-thanhrelease-pod-uss2.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+    </audio></div></div><div class="div-block-6"></div><div data-w-id="efd2eb02-38b9-27f1-9960-8ad3ef42a5d6" style="opacity: 0;" class="div-block-7"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65288223b82d937991919f25_Untitledesign.svg" loading="lazy" height="" alt="" id="w-node-efd2eb02-38b9-27f1-9960-8ad3ef42a5d8-d4a3a4e1" class="image-3"></div></div></div></div></div></section><section class="section-episodes"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div data-w-id="8b9f82eb-003f-a766-ee52-bf4474e4b8d8" style="opacity: 0;" class="episodes-header"><div class="div-block-15"><div class="padding-bottom padding-small"></div><div class="div-block-14"><h2>WHAT WE DO</h2><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65248787f4c77c941ebe09e8_GRAY-DASHL_LINE.svg.svg" loading="lazy" alt="" class="about-lines"></div><div class="padding-bottom padding-small"></div></div></div><div class="padding-bottom padding-large"></div><div class="episode-component"><div class="episode-content"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652595294e74dc353ecd769a_edmond.jpeg" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 991px) 335.9942932128906px, (max-width: 1279px) 27vw, (max-width: 1919px) 335.9942932128906px, 420px" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652595294e74dc353ecd769a_edmond-p-500.jpeg 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652595294e74dc353ecd769a_edmond-p-800.jpeg 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652595294e74dc353ecd769a_edmond-p-1080.jpeg 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652595294e74dc353ecd769a_edmond.jpeg 1600w" alt="" class="image-7"><div class="heading-style-h6"><strong class="bold-text-15">Personal Stories</strong></div><div class="text-block-37">Short audio stories crafted by incarcerated and formerly-incarcerated students in Uncuffed training programs.</div><a href="#" class="link-2">Listen Online</a></div><div class="episode-content"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259620444069328ef19809_SOL%20Roundtable%20by%20Brian%20McCann.JPG" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 991px) 335.9942932128906px, (max-width: 1279px) 27vw, (max-width: 1919px) 335.9942932128906px, 420px" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259620444069328ef19809_SOL%20Roundtable%20by%20Brian%20McCann-p-500.jpg 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259620444069328ef19809_SOL%20Roundtable%20by%20Brian%20McCann-p-800.jpg 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259620444069328ef19809_SOL%20Roundtable%20by%20Brian%20McCann-p-1080.jpg 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259620444069328ef19809_SOL%20Roundtable%20by%20Brian%20McCann.JPG 1600w" alt="" class="image-6"><div class="heading-style-h6"><strong class="bold-text-13">The Uncuffed Podcast</strong></div><div class="text-block-35">Sit down with the Uncuffed producers as they unpack the stories they’ve recorded. A showcase for great storytelling and deep conversations about life inside the system.</div><a href="#" class="link-3">Listen Online and in Podcast Players</a></div><div class="episode-content"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652596d873950cc06e98b4b7_Gaines%20Square.JPG" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 991px) 335.9942932128906px, (max-width: 1279px) 27vw, (max-width: 1919px) 335.9942932128906px, 420px" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652596d873950cc06e98b4b7_Gaines%20Square-p-500.jpg 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652596d873950cc06e98b4b7_Gaines%20Square-p-800.jpg 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652596d873950cc06e98b4b7_Gaines%20Square-p-1080.jpg 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652596d873950cc06e98b4b7_Gaines%20Square.JPG 1600w" alt="" class="image-8"><div class="heading-style-h6"><strong class="bold-text-14">The Uncuffed Playlist</strong></div><div class="text-block-36">Music shows hosted by student DJs at Solano State Prison. Uncuffed DJs choose an hour of their favorite music and reveal how those songs relate to their lives.</div><a href="#" class="link-4">Preview Online | Complete Shows On Spotify</a></div></div></div></div><div class="div-block-58"><a href="/listen" class="button secondary w-button">Listen to all content</a></div></div></section><section class="info-section"><div><div class="container-large"><div><div class="home-about-component flip"><div data-w-id="fa7e2025-7c2e-ea00-7e8a-e55569af62cb" style="opacity: 0;" class="div-block-51"><h2 class="heading-2">IMPACT</h2><div class="text-color-white">Uncuffed has offered groundbreaking prison radio training inside prisons for over a decade. Our participants develop tools build skills for a purpose: to change the narrative about people in prison and to gain job skills.<br><br>We’ve worked with over 80 participants, and aired over 140 of their stories and shows. To our knowledge, we have a 0% recidivism rate. No Uncuffed participant has ever returned to prison left prison and gone back. <br><br>Uncuffed alumni include the founders of the podcast <a href="https://www.earhustlesq.com/" class="para_link">Ear Hustle</a>, award-winning film documentarians, and many others who have gone on to careers in media, communications, and advocacy.</div><div class="div-block-59"><a href="#" class="link">Learn More</a></div></div><div data-w-id="fa7e2025-7c2e-ea00-7e8a-e55569af62d4" style="opacity: 0;" class="div-block-5"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65248ee15f11680245f7b091_left_blueLine.svg.svg" loading="lazy" alt="" class="image-4"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652598a5dcd61ea92b6de841_Copy%20of%20Maria%2C%20Dedricc%20and%20Oliver%20with%20Certificate.JPG" loading="lazy" id="w-node-fa7e2025-7c2e-ea00-7e8a-e55569af62d6-d4a3a4e1" sizes="(max-width: 479px) 77vw, (max-width: 767px) 67vw, (max-width: 991px) 69vw, (max-width: 1439px) 46vw, (max-width: 1919px) 640px, 703.991455078125px" alt="" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652598a5dcd61ea92b6de841_Copy%20of%20Maria%2C%20Dedricc%20and%20Oliver%20with%20Certificate-p-500.jpg 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652598a5dcd61ea92b6de841_Copy%20of%20Maria%2C%20Dedricc%20and%20Oliver%20with%20Certificate-p-800.jpg 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652598a5dcd61ea92b6de841_Copy%20of%20Maria%2C%20Dedricc%20and%20Oliver%20with%20Certificate-p-1080.jpg 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652598a5dcd61ea92b6de841_Copy%20of%20Maria%2C%20Dedricc%20and%20Oliver%20with%20Certificate.JPG 1600w" class="about-image"><div id="w-node-_4721fe5c-d099-2900-16e1-8a59504a394e-d4a3a4e1" class="div-block-10"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65248f3b4c54ea322001f188_right_blueLine.svg" loading="lazy" id="w-node-fa7e2025-7c2e-ea00-7e8a-e55569af62d7-d4a3a4e1" alt="" class="about-lines"></div></div></div></div></div></div></section><section class="section-support-uncuffed"><div class="div-block-54"><div class="container-large"><div><div class="home-about-component"><div data-w-id="882b23c5-0df1-7194-a3d5-8109ff96a9c4" style="opacity: 0;" class="home-about-content"><h2 class="heading-style-h3">SUPPORT UNCUFFED</h2><div class="text-color-grey">Join us in creating the next chapter of Uncuffed. We’re bringing our training program to incarcerated women for the first time. And we’re creating more job opportunities for Uncuffed graduates. </div><a href="/donate" class="learn-more-button w-button">Support Our Work</a><div class="text-color-grey">Uncuffed is a project of KALW Public Media, a 501(c)(3) organization. All donations are fully tax-deductible.</div></div><div data-w-id="882b23c5-0df1-7194-a3d5-8109ff96a9ce" style="opacity: 0;" class="home-about-image-wrapper"><div class="div-block-11"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65248ee15f11680245f7b091_left_blueLine.svg.svg" loading="lazy" alt="" class="image-13"></div><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259a03e290dbb74db023a5_shakur.jpeg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 74vw, (max-width: 991px) 77vw, (max-width: 1439px) 48vw, (max-width: 1919px) 666.4488525390625px, 740.4971313476562px" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259a03e290dbb74db023a5_shakur-p-500.jpeg 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259a03e290dbb74db023a5_shakur-p-800.jpeg 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259a03e290dbb74db023a5_shakur-p-1080.jpeg 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65259a03e290dbb74db023a5_shakur.jpeg 1600w" alt="" class="about-image"><div id="w-node-b86c82b0-2038-8cbb-9594-33918b1da575-d4a3a4e1" class="div-block-12"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65248f3b4c54ea322001f188_right_blueLine.svg" loading="lazy" id="w-node-_0a3cd71e-97f9-4e3f-847a-661a3a78a511-d4a3a4e1" alt="" class="about-lines"></div></div></div></div></div></div></section><section class="see-what-more"><div><div class="container-large"><div><div data-w-id="27520e3c-65f6-991d-baed-b0ae2b0d6350" style="opacity: 0;" class="episodes-header"><div class="episodes-header-wrapper"><div class="padding-bottom padding-small"></div><div class="div-block-4"><h2 class="heading-9"><span class="text-span-2">Learn more about Uncuffed</span></h2></div><div class="padding-bottom padding-small"></div><div class="div-block-13"><div class="text-block-6">How do you make a podcast in a prison?</div></div><div class="text-block-7">MORE FROM UNCUFFED</div><div class="div-block-16"><a href="#" class="see_link">About</a><a href="#" class="see_link">Inside Team</a><a href="/outside-team" class="see_link">Outside Team</a><a href="#" class="see_link">Newsletter</a><a href="/faq" class="see_link">FAQ</a><a href="/contact" class="see_link">Contact</a></div></div></div><div class="padding-bottom padding-large"></div></div></div></div></section><div class="walsh-container-2"><div class="walsh-rounded-box-banner-2"><div class="walsh-inner-column-left"><div class="walsh-quote-image-wrapper-2"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65285da89e9b9fca5901568a_mic_two.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 73vw, (max-width: 991px) 79vw, (max-width: 1279px) 42vw, (max-width: 1919px) 43vw, 620px" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65285da89e9b9fca5901568a_mic_two-p-500.png 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65285da89e9b9fca5901568a_mic_two.png 800w" alt="" class="walsh-cover-image-2"></div></div><div class="walsh-inner-column-center-2"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65272322d82b711c14d060d5_noun_Quote_89670.svg" loading="lazy" alt="" class="walsh-quote-image-2"><div class="walsh-heading-regular-2">“On Uncuffed, you have the freedom to tell your story.” </div><div class="walsh-profile-wrapper"><div class="walsh-info-wrap"><div class="walsh-heading-small-2">– Anthony Ivy</div><div class="walsh-text-small-left-2">Participant </div></div></div></div></div></div></div><section class="section"><div class="div-block-17"><div class="text-span-2">Subscribe on your favorite platform </div><div class="text-block-9">The Uncuffed podcast is a showcase for personal stories and deep roundtable conversations with the incarcerated Uncuffed producers.</div><div class="div-block-19"><a href="#" class="w-inline-block"><div class="div-block-18"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526cae0d84e320cb371b120_Link-5.png" loading="lazy" alt=""></div></a><a href="#" class="w-inline-block"><div class="div-block-18"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a50e_s-spotify.svg" loading="lazy" alt="" class="image-5"><div class="div-block-55"></div><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526cad3bc37338e7e3c37e9_Link-4.png" loading="lazy" width="358" alt=""></div></a><a href="#" class="w-inline-block"><div class="div-block-18"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526ca0f0790c983d547235a_Link-3.png" loading="lazy" width="400" height="Auto" alt=""></div></a></div></div></section></div><div class="rl_footer1_component"><div class="div-block-48"><div class="rl-container-large"><div class="rl-padding-section-medium"><div class="div-block-25"><div class="div-block-26"><div class="text-block-17">Uncuff Your Inbox!</div><div class="text-block-16">Uncuffed is a prison radio training program and a podcast where people in California prisons tell their stories.</div></div><div class="form-block w-form"><form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get" class="form" data-wf-page-id="65244ca70be6b863d4a3a4e1" data-wf-element-id="6a2a0e75-8b69-3ac4-1bbb-5841dc43b6b8" aria-label="Email Form 2"><input type="text" class="text-field-3 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="First Name" id="name-3" required=""><input type="text" class="text-field-2 w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Last Name" id="name-2" required=""><input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" id="email-2" required=""><input type="submit" value="Subscribe" data-wait="Please wait..." class="submit-button w-button"></form><div class="rl-text-style-tiny">By subscribing you agree to with our <a href="#"><span class="rl-text-style-link">Privacy Policy</span></a> </div><div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form 2 success"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form 2 failure"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><div class="rl_footer1_line-divider"></div><div class="w-layout-grid rl_footer1_top-wrapper"><div class="rl_footer1_left-wrapper"><a href="/" aria-current="page" class="rl_footer1_logo-link w-nav-brand w--current"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652454e14e1f8436f6875417_Uncuffed%20Logo%20for%20Social%20Media%20Circles.png" loading="lazy" alt="" class="rl_footer1_logo"><div class="text-block-15">UNCUFFED</div></a><div class="rl_footer1_spacing-block-1"></div><div class="rl-text-style-regular">Join the conversation <br>@WeAreUncuffed</div><div class="rl_footer1_spacing-block-2"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a507_Instagram.svg" loading="lazy" alt=""><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/65244ca70be6b863d4a3a506_Facebook.svg" loading="lazy" alt=""></div></div><div id="w-node-_6a2a0e75-8b69-3ac4-1bbb-5841dc43b6d8-dc43b6ad" class="w-layout-grid rl_footer1_menu-wrapper"><div id="w-node-_6a2a0e75-8b69-3ac4-1bbb-5841dc43b6d9-dc43b6ad" class="rl_footer1_link-list"><div class="rl_footer_column-text">Uncuffed</div><div class="rl_footer1_spacing-block-4"></div><a href="/listen" class="rl_footer1_link">Listen</a><a href="#" class="rl_footer1_link">About</a><a href="#" class="rl_footer1_link">Team</a><a href="#" class="rl_footer1_link margin_10">Uncuffed Inside Team</a><a href="/outside-team" class="rl_footer1_link margin_10">Uncuffed Outside Team</a><a href="/contact" class="rl_footer1_link">Contact</a><a href="/faq" class="rl_footer1_link">FAQ</a></div><div id="w-node-_6a2a0e75-8b69-3ac4-1bbb-5841dc43b6e7-dc43b6ad" class="rl_footer1_link-list"><div class="rl_footer_column-text">A KALW Project</div><div class="rl_footer1_spacing-block-4"></div><a href="#https://www.kalw.org" class="w-inline-block"><img src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526072d5bc1b66b418d9951_CYAN%20KALW_Logo_Lockup%20KPM%20917%20Org%20v3.png" loading="lazy" width="150" sizes="150px" alt="" srcset="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526072d5bc1b66b418d9951_CYAN%20KALW_Logo_Lockup%20KPM%20917%20Org%20v3-p-500.png 500w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526072d5bc1b66b418d9951_CYAN%20KALW_Logo_Lockup%20KPM%20917%20Org%20v3-p-800.png 800w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526072d5bc1b66b418d9951_CYAN%20KALW_Logo_Lockup%20KPM%20917%20Org%20v3-p-1080.png 1080w, https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/6526072d5bc1b66b418d9951_CYAN%20KALW_Logo_Lockup%20KPM%20917%20Org%20v3.png 1600w" class="image-12"></a></div></div></div><div class="rl_footer1_spacing-block-5"></div><div class="rl_footer1_line-divider"></div><div class="rl_footer1_bottom-wrapper"><div class="rl_footer1_credit-text">© 2022 KALW / Uncuffed</div></div></div></div></div></div>
+
+  <div id="modalOverlay">
+    <div id="modalContainer"><header class="uui-section_header06 subscribe_section"><div class="uui-page-padding-5"><div class="uui-container-large-2"><div><div class="text-block-34">X</div></div><div><div class="w-layout-grid uui-header06_component"><div id="w-node-_0ea5aaa1-4f66-0ae2-7922-2546cb7817a0-d4a3a4e1" class="uui-header06_content-left"><h1 class="uui-heading-large">Stay up to date on Uncuffed news, stories, and much more!</h1></div><a href="#" class="button-6 w-button">Join Our Newsletter</a></div></div></div></div></header></div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65244ca70be6b863d4a3a46d" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/js/webflow.66c6a50e8.js" type="text/javascript"></script><script>
+
+const playTrailer = $('.play-trailer-home');
+const audioURL = 'https://cpa.ds.npr.org/s2/audio/2022/11/unc-thanhrelease-pod-uss2.mp3';
+playTrailer.append(`<audio class="audio-player">
+    <source src="${audioURL}" type="audio/mpeg">
+    Your browser does not support the audio tag.
+    </audio>`
+    );
+
+const audioPlayers =  document.querySelectorAll('.audio-player');
+const playButtons = document.querySelectorAll('.play-button');
+
+playButtons.forEach((playButton, index) => {
+    const pause_icon = 'https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652f101792ecc4e7deb22dc0_pause-button.jpg';
+    const play_icon = 'https://assets-global.website-files.com/65244ca70be6b863d4a3a46d/652f1017e31587801499a49b_play-button.jpg';
+
+    playButton.addEventListener('click', function () {
+      const audioPlayer = audioPlayers[0];
+      if (audioPlayer?.paused) {
+        audioPlayer.play();
+        playButton.src = pause_icon;
+        playButton.srcset = '';
+      } else {
+        audioPlayer?.pause();
+        playButton.src = play_icon;
+        playButton.srcset = '';
+      }
+    });
+  });
+
+
+
+
+  //////////////////////////
+
+
+    // Get references to the modal container and the footer where you want to append it.
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalContainer = document.getElementById('modalContainer');
+    const infoSection = document.querySelector('.info-section');
+    modalContainer.style = 'z-index: 1000;';
+
+    // Define a function to show the modal.
+     // Check if modal state is set in localStorage
+     localStorage.setItem("modalClosed", "false");
+
+    function showModal() {
+      if (localStorage.getItem("modalClosed") !== "true") {
+        modalOverlay.style.display = 'flex'; // Change to flex to center the modal content
+        setTimeout(() => {
+          modalOverlay.style.opacity = '1';
+          modalContainer.style.opacity = '1';
+        }, 0); // Delay setting opacity to ensure the transition is applied
+      }
+    }
+
+
+
+    function hideModal() {
+      modalOverlay.style.opacity = '0';
+      modalContainer.style.opacity = '0';
+
+      setTimeout(() => {
+        modalOverlay.style.display = 'none';
+      }, 300); // Delay setting display to ensure the transition is applied
+      // Store the modal state in localStorage
+    }
+
+
+    // Function to check if the user has scrolled to a certain position to trigger the modal.
+    function checkScrollPosition() {
+      const scrollY = window.scrollY || window.pageYOffset;
+      console.log('scrollY: ', scrollY);
+
+      const triggerPosition = 2164; // Adjust this value as needed.
+      console.log('triggerPosition: ', triggerPosition);
+
+      if (scrollY > triggerPosition && scrollY < 2970) {
+
+        showModal();
+
+      } else {
+
+        hideModal();
+      }
+    }
+
+    // Attach an event listener to the window's scroll event.
+    window.addEventListener('scroll', checkScrollPosition);
+
+
+    // Attach an event listener to close the modal when the "X" button is clicked.
+    const closeButton = modalContainer.querySelector('.text-block-34');
+    closeButton.style='cursor: pointer;'
+    closeButton.addEventListener('click', () => {
+      localStorage.setItem("modalClosed", "true");
+      hideModal();
+    });
+
+
+    // Attach an event listener to close the modal when the "Join Our Newsletter" button is clicked.
+    const joinButton = modalContainer.querySelector('.button-6');
+    joinButton.addEventListener('click', {
+      handleEvent: hideModal,
+      capture: false
+    });
+
+
+    // Append the modal container to the footer.
+    $(body).appendChild(modalContainer);
+
+
+
+  ///////////////////////////
+</script>
+
+
+ </body>
+
+
+
+
+
+
+
+
+ </body>
+</html>
+
